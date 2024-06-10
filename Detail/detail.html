@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Details</title>
+      <link rel="stylesheet" href="../Styles/style.css">
+      <link rel="stylesheet" href="./detail.css">
+    <script
+    src="https://kit.fontawesome.com/74894dafb2.js"
+    crossorigin="anonymous"
+  ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="main">
+         <nav class="nav-menu">
+
+              <div class="logo-menu" onclick=showMenu()>
+                <div class="imdb-logo">
+                     <img src="../assets/IMDB.png" alt="imdb-logo">
+                </div>
+                <div class="bar-menu hover">
+                    <i class="fa-solid fa-bars" ></i> <span>Menu</span>
+                </div>
+              </div>
+              <div class="search-box">
+                <div id="search-icon"><a href="../index.html"> <i class="fa-solid fa-magnifying-glass"></i></a></div>
+              </div>
+              <div class="fabs-login">
+                
+
+                <h3 class="hover"><a href="./WatchList/watchlist.html"><i class="WatchList"></i> <span id="watchlist-text">Watchlist</span></a></h3>
+                <h3 class="hover" id="signin">
+                  <a href="#" onclick="window.location.href='./loginpanel/login.html'; return false;">Sign In</a>
+                </h3>
+              </div>
+              
+         </nav>
+            
+
+         <div class="side-option" id="side">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <br>
+          <br>
+           <ul class="side-list">
+               <li>
+                <div> <i class="fa-solid fa-film"></i>&nbsp;<span>Movies</span></div>
+                <div><i class="fa-solid fa-chevron-down"></i></div>
+               </li>
+               <li>
+                <div> <i class="fa-solid fa-tv"></i>&nbsp;<span>Tv Shows</span></div>
+                <div><i class="fa-solid fa-chevron-down"></i></div>
+               </li>
+               <li>
+                <div><i class="fa-solid fa-video"></i>&nbsp;<span>Watch</span></div>
+                <div><i class="fa-solid fa-chevron-down"></i></div>
+               </li>
+               <li>
+                <div> <i class="fa-solid fa-award"></i>&nbsp;<span>Awards & Events</span></div>
+                <div><i class="fa-solid fa-chevron-down"></i></div>
+               </li>
+               <li>
+                <div><i class="fa-solid fa-person"></i>&nbsp;<span>Celebs</span></div>
+                <div><i class="fa-solid fa-chevron-down"></i></div>
+               </li>
+               <li>
+                <div><i class="fa-solid fa-globe"></i>&nbsp;<span>Community</span></div>
+                <div><i class="fa-solid fa-chevron-down"></i></div>
+               </li>
+               <br>
+               <br>
+               <li>
+                  <div>
+                    <h4>IMDbPro</h4>
+                    <p style="font-size: 15px;">For Industrial Professionals</p>
+                  </div>
+                  <div><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+               </li>
+             
+            </ul>
+       </div>
+
+    <a href="../index.html"> <button id="return-to-home"><i class="fas fa-chevron-left"></i>Home</button></a>
+
+ <div id="main">
+
+    <div id="movie-display">
+
+
+    </div>
+ </div>
+
+ 
+       
+    
+
+    </section>
+   <script type="text/javascript" src="./detail.js"></script> 
+</body>
+</html>

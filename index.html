@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">IMDb Arda Dogan</title>
+    <link rel="stylesheet" href="./Styles/style.css">
+    <script src="https://kit.fontawesome.com/74894dafb2.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="main">        
+        <nav class="nav-menu">
+            <div class="logo-menu" onclick="showMenu()">
+                <div class="imdb-logo" id="i-logo">
+                    <img src="./assets/IMDB.png" alt="imdb-logo">
+                </div>
+                <div class="bar-menu hover">
+                    <i class="fa-solid fa-bars"></i> <span id="menu-text">Menu</span>
+                </div>
+            </div>
+            <div class="search-box">
+                <input type="text" name="searchMovie" id="searchMovie" placeholder="Search" autocomplete="off">
+                <div id="search-icon"> <i class="fa-solid fa-magnifying-glass"></i></div>
+            </div>
+            <div class="fabs-login">
+                <h3 class="hover"><a href="./WatchList/watchlist.html"><i class="WatchList"></i> <span id="watchlist-text">Watchlist</span></a></h3>
+                <h3 class="hover" id="signin">
+                    <a href="#" onclick="window.location.href='./loginpanel/login.html'; return false;">Sign In</a>
+                  </h3>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn" id="lang-button">Language</button>
+                <div class="dropdown-content">
+                    <a href="#" id="lang-tr">TR</a>
+                    <a href="#" id="lang-en">EN</a>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="top-10-imdb" id="top-10-imdb">
+            <h2>TOP 10 IMDb This Week</h2>
+        </div>
+        
+        <div class="side-option" id="side">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <br>
+            <br>
+            <ul class="side-list">
+                <li>
+                    <div> <i class="fa-solid fa-film"></i>&nbsp;<span id="movies-text">Movies</span></div>
+                    <div><i class="fa-solid fa-chevron-down"></i></div>
+                </li>
+                <li>
+                    <div> <i class="fa-solid fa-tv"></i>&nbsp;<span id="tvshows-text">Tv Shows</span></div>
+                    <div><i class="fa-solid fa-chevron-down"></i></div>
+                </li>
+                <li>
+                    <div><i class="fa-solid fa-video"></i>&nbsp;<span id="watch-text">Watch</span></div>
+                    <div><i class="fa-solid fa-chevron-down"></i></div>
+                </li>
+                <li>
+                    <div> <i class="fa-solid fa-award"></i>&nbsp;<span id="awards-text">Awards & Events</span></div>
+                    <div><i class="fa-solid fa-chevron-down"></i></div>
+                </li>
+                <li>
+                    <div><i class="fa-solid fa-person"></i>&nbsp;<span id="celebs-text">Celebs</span></div>
+                    <div><i class="fa-solid fa-chevron-down"></i></div>
+                </li>
+                <li>
+                    <div><i class="fa-solid fa-globe"></i>&nbsp;<span id="community-text">Community</span></div>
+                    <div><i class="fa-solid fa-chevron-down"></i></div>
+                </li>
+                <br>
+                <br>
+                <li>
+                    <div>
+                        <h4>IMDbPro</h4>
+                        <p style="font-size: 15px;" id="imdbpro-desc">For Industrial Professionals</p>
+                    </div>
+                    <div><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+                </li>
+            </ul>
+        </div>
+
+        <div id="movies">
+        </div>
+
+        <div class="page-navigate">
+            <button id="prev-page">Önceki</button>
+            <button id="next-page">Sonraki</button>
+        </div>
+
+        <footer class="footer">
+          <div class="footer-container">
+            <div class="footer-section">
+              <h3>Follow IMDb on social</h3>
+              <div class="social-icons">
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+              </div>
+            </div>
+            <div class="footer-section">
+              <h3>Get the IMDb app</h3>
+              <div class="app-link">
+                
+                <p>For Android and iOS</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="footer-links">
+            <a href="#">Help</a>
+            <a href="#">Site Index</a>
+            <a href="#">IMDbPro</a>
+            <a href="#">Box Office Mojo</a>
+            <a href="#">License IMDb Data</a>
+            <a href="#">Press Room</a>
+            <a href="#">Advertising</a>
+            <a href="#">Jobs</a>
+            <a href="#">Conditions of Use</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Your Ads Privacy Choices</a>
+          </div>
+          <div class="footer-bottom">
+            <p>An <a href="#">Amazon</a> company</p>
+            <p>&copy; 1990-2024 by IMDb.com, Inc.</p>
+          </div>
+        </footer>
+
+    </section>
+    <script type="text/javascript" src="./JavaScript/script1.js"></script> 
+</body>
+
+</html>
