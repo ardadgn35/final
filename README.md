@@ -14,4 +14,15 @@ CSS: For styling the website.
 Bootstrap: For responsive design and layout.
 JavaScript: For dynamic content and interactivity.
 
+# SCREENSHOTS
+
+![Ekran görüntüsü 2024-06-10 214933](https://github.com/ardadgn35/final/assets/132614153/d723a55a-f902-4ebd-b062-ea847a232e7d)
+
+![Ekran görüntüsü 2024-06-10 214952](https://github.com/ardadgn35/final/assets/132614153/62ac33d2-78df-4a5e-b773-14a24e09ba11)
+
+![Ekran görüntüsü 2024-06-10 215108](https://github.com/ardadgn35/final/assets/132614153/31175f84-9ce6-4bec-a53b-e4898f97ffd0)
+
+
+
+
 
